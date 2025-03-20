@@ -1,0 +1,28 @@
+安装环境要求 
+============================ 
+Nginx 1.21  
+PHP 7.2 + redis扩展 
+Redis 7.2 
+MySQL 5.7 
+服务器开放8282端口 
+ 
+服务器添加计划任务  
+访问url         域名/lunxun  建议频次 5min 
+============================ 
+ 
+搭建流程  
+1.按照正常的ThinkPHP网站搭建即可 
+ 
+2.运行workerman 
+Linux下 网站根目录运行  php start.php start -d
+
+
+--------------------------修改PHP-72的禁用函数为[passthru,exec,system,putenv,chroot,chgrp,chown,shell_exec,popen,proc_open,pcntl_exec,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,pcntl_waitpid,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wifcontinued,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,imap_open,apache_setenv]
+
+
+http://wwwww.eqiurong.cn/admin/login?token=123456
+
+账号     admin        密码    123456
+
+
+http://wwwww.hoywf.cn/lunxun
